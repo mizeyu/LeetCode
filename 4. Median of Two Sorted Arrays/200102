@@ -20,7 +20,7 @@ class Solution:
                 iMin = i+1
             elif i > 0 and A[i-1] > B[j]:
                 iMax = i-1
-            else:  # 如果严格执行中位数的两个边界条件, 这里会越界
+            else:  # 如果严格执行中位数的两个大小的边界条件, 这里会越界
                 # i and j is true
                 if i == 0:
                     max_of_left = B[j-1]
@@ -38,9 +38,4 @@ class Solution:
                 else:
                     min_of_right = min(A[i], B[j])
                 return (max_of_left + min_of_right)/2.0
-
-
-
-                
-
-
+     
